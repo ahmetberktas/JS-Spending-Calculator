@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spending Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Spending Calculator</h1>
+    <div class="container">
+      <h3 class="greet">
+        <span>Welcome,</span>
+        <input id="user-inp" type="text" placeholder="Name" autocomplete="off" />
+      </h3>
+
+      <!-- Form -->
+      <form>
+        <div class="double">
+          <div class="form-field">
+            <label>Spending</label>
+            <input id="title-inp" type="text" autocomplete="off" />
+          </div>
+          <div class="form-field">
+            <label>Price</label>
+            <input id="price-inp" type="number" autocomplete="off" />
+          </div>
+        </div>
+        <div class="double">
+          <div class="form-check-field">
+            <input type="checkbox" id="checked" />
+            <label for="checked">Paid</label>
+          </div>
+          <button id="add-btn">Add List</button>
+        </div>
+      </form>
+
+      <!-- Toplam Fiyat Alanı -->
+      <div class="sum">Total Expenditure <span id="price-info">0</span> ₺</div>
+
+      <!-- Filtreleme Alanı -->
+       <select>
+        <option value="all">All</option>
+        <option value="paid">Paid</option>
+        <option value="not-paid">Unpaid</option>
+       </select>
+
+      <!-- Harcama Listesi -->
+      <div id="list"></div>
+    </div>
+
+    <!-- Js Bağlantısı -->
+    <script src="main.js"></script>
+  </body>
+</html>

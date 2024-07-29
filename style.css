@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #211951;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Inconsolata";
+}
+
+.heading {
+  color: #836fff;
+  text-shadow: 2px 2px 20px #836fff;
+  letter-spacing: 2px;
+}
+
+.container {
+  background-color: #f0f3ff;
+  width: 60vw;
+  max-width: 600px;
+  height: auto; 
+  min-height: 70vh;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+  overflow-y: auto;
+}
+
+.greet {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.greet input {
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #f0f3ff;
+}
+
+form {
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.double {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0 30px;
+}
+
+input {
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #211951;
+}
+
+.form-check-field {
+  display: flex;
+  gap: 10px;
+}
+
+.form-check-field label:hover {
+  cursor: pointer;
+}
+
+button {
+  background: #15f5ba;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  color: #211951;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover {
+  box-shadow: 0 0 20px #15f5ba;
+  scale: 0.98;
+}
+
+/* Liste Alanı */
+#list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 10px;
+  height: auto;
+}
+
+.expense {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.expense #price {
+  color: red;
+  font-size: 18px;
+}
+
+.expense #title {
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+
+.expense img {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.paid {
+  opacity: 0.6;
+}
+
+.paid #title {
+  text-decoration: line-through;
+}
+
+.paid #price {
+  color: green;
+}
+
+.sum {
+  background-color: #211951;
+  padding: 10px 30px;
+  color: #f0f3ff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#price-info {
+  color: gold;
+}
+
+select {
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* 700px altında */
+@media (max-width: 700px) {
+  .heading {
+    display: none;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    max-width: none;
+    border-radius: 0px;
+  }
+}
