@@ -28,7 +28,7 @@ body {
   background-color: #f0f3ff;
   width: 60vw;
   max-width: 600px;
-  height: auto; 
+  height: auto;
   min-height: 70vh;
   padding: 30px;
   border-radius: 10px;
@@ -182,6 +182,7 @@ select {
   .heading {
     display: none;
   }
+
   .container {
     height: 100vh;
     width: 100vw;
